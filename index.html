@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#77c3ec" />
+		<link rel="stylesheet" href="app.css">
+		<title>Docler Chat</title>
+	</head>
+	<body>
+		<div class="settings-modal">
+			<div class="settings-form">
+				<div class="settings-form__close-container">
+					<span class="settings-form__close-button">&times;</span>
+				</div>
+				<div class="settings-form__row settings-form__row-title">
+					Name
+				</div>
+				<div class="settings-form__row settings-form__row-content">
+					<input type="text" class="settings-form__name-text" maxlength="20">
+					<input type="submit" class="settings-form__name-button" value="Change">
+				</div>
+				<div class="settings-form__row settings-form__row-title">
+					Time display
+				</div>
+				<div class="settings-form__row settings-form__row-content">
+					<label>
+						<input type="radio" class="radio-time" name="timeSettings" value="1"> 12 hour
+					</label>
+					<label>
+						<input type="radio" class="radio-time" name="timeSettings" value="0"> 24 hour
+					</label>
+				</div>
+				<div class="settings-form__row settings-form__row-title">
+					Send messages on Ctrl/Cmd + Enter
+				</div>
+				<div class="settings-form__row settings-form__row-content">
+					<label>
+						<input type="radio" class="radio-submit" name="submitSettings" value="1"> On
+					</label>
+					<label>
+						<input type="radio" class="radio-submit" name="submitSettings" value="0"> Off
+					</label>
+				</div>
+				<div class="settings-form__row settings-form__row-title">
+					Reset To Defaults
+				</div>
+				<div class="settings-form__row settings-form__row-content">
+					<button class="reset-settings">Reset To Defaults</button>
+				</div>
+			</div>
+		</div>
+		<header>
+			<span class="header-flex-item"></span>
+			<span class="header-flex-item">
+				<span class="header-message">Docler Chat | Welcome </span><span class="header-name"></span>
+			</span>
+			<span class="header-flex-item">
+				<img class="settings-button" src="gear.png">
+			</span>
+		</header>
+		<div class="convo">
+			<div class="convo-msgs"></div>
+		</div>
+		<div class="msg-sender">
+			<form class="msg-form">
+				<input type="text" class="msg-form__text" placeholder="Enter your message...">
+				<input type="submit" value="Send" class="msg-form__button">
+			</form>
+		</div>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="/app.js"></script>
+	</body>
+</html>
