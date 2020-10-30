@@ -30,7 +30,7 @@ io.on('connection', (socket) => {
 		socket.emit('serverMsg', {
 			name: botName,
 			time: Date.now(),
-			text: 'Hi there! Welcome to DoclerChat.'
+			text: 'Hi there! Welcome to Docler Chat.'
 		});
 	}, 1000);
 
