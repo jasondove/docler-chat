@@ -142,6 +142,7 @@ header {
 
 .msg {
     max-width: 50%;
+    margin-bottom: 8px;
 }
 
 .msg_me {
