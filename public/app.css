@@ -48,6 +48,11 @@ header {
     text-align: right;
 }
 
+.header-message,
+.header-name {
+    text-shadow: -1px -1px 0 #439aba;
+}
+
 .settings-button {
     display: inline-block;
     position: relative;
@@ -230,7 +235,7 @@ header {
     flex-direction: row;
     width: 80%;
     min-width: 320px;
-    max-width: 400px;
+    max-width: 500px;
     height: 100%;
     margin: 0 auto;
     border: 2px solid var(--highlight);
@@ -243,6 +248,7 @@ header {
     padding: 3px 5px;
     outline: none;
     border: none;
+    box-shadow: inset 1px 2px 5px rgba(150, 150, 150, 0.6);
 }
 
 .msg-form__text::placeholder {
@@ -255,13 +261,14 @@ header {
     width: 50px;
     border: none;
     color: #fff;
-    background-color: var(--highlight);
+    text-shadow: -1px -1px 0 #439aba;
     cursor: pointer;
     outline: 0;
+    background: linear-gradient(var(--highlight), #65b3dc);
 }
 
 .msg-form__button:active {
-    background-color: #65b3dc;
+    background: linear-gradient(#65b3dc, var(--highlight));
 }
 
 

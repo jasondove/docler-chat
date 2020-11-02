@@ -132,15 +132,15 @@ class DoclerChat {
 		// Set name setting
 		this.setNameSetting(
 			settings.hasOwnProperty('name') && typeof settings.name === 'string' ?
-			settings.name :
-			this.settingsDefault.name
+				settings.name :
+				this.settingsDefault.name
 		);
 
 		// Set time setting and check the appropriate radio button
 		this.setTimeSetting(
 			settings.hasOwnProperty('use12HrTime') && typeof settings.use12HrTime === 'boolean' ?
-			settings.use12HrTime :
-			this.settingsDefault.use12HrTime
+				settings.use12HrTime :
+				this.settingsDefault.use12HrTime
 		);
 		let val = this.settings.use12HrTime ? "1" : "0";
 		let len = this.$settingsFormTimeButtons.length;
@@ -154,8 +154,8 @@ class DoclerChat {
 		// Set submit setting and check the appropriate radio button
 		this.setSubmitSetting(
 			settings.hasOwnProperty('ctrlEnterSend') && typeof settings.ctrlEnterSend === 'boolean' ?
-			settings.ctrlEnterSend :
-			this.settingsDefault.ctrlEnterSend
+				settings.ctrlEnterSend :
+				this.settingsDefault.ctrlEnterSend
 		);
 		val = this.settings.ctrlEnterSend ? "1" : "0";
 		len = this.$settingsFormSubmitButtons.length;
